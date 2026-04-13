@@ -1,0 +1,40 @@
+backend:
+  name: test-repo
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "_projects"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["Education", "Healthcare", "Environment", "Disaster Relief"] }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Goal Amount (₹)", name: "goal", widget: "number" }
+      - { label: "Raised Amount (₹)", name: "raised", widget: "number" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Active", name: "active", widget: "boolean", default: true }
+
+  - name: "blog"
+    label: "News & Blog"
+    folder: "_posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "team"
+    label: "Team Members"
+    folder: "_team"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Bio", name: "bio", widget: "text" }
