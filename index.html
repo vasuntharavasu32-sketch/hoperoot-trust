@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HopeRoot Trust — Empowering communities through education, healthcare, and sustainable development across 12 regions." />
+  <meta name="keywords" content="NGO, trust, donate, education, healthcare, non-profit, charity" />
+  <meta property="og:title" content="HopeRoot Trust — Seeds of Change" />
+  <meta property="og:description" content="Join us in transforming lives through education, healthcare, and community empowerment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80" />
+  <title>HopeRoot Trust — Seeds of Change</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function(){ if(window.emailjs) window.emailjs.init("NWEV38xKwiwNCGBFG"); })();
+  </script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ===== HEADER / NAV ===== -->
+<header class="site-header" role="banner">
+  <div class="nav-container">
+    <a href="#" class="logo" aria-label="HopeRoot Trust Home">
+      <span class="logo-icon">🌱</span>
+      <span class="logo-text">HopeRoot <em>Trust</em></span>
+    </a>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Our Work</a></li>
+        <li><a href="#involve">Get Involved</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#donate" class="btn-donate-nav" aria-label="Donate Now">Donate Now</a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile Navigation">
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav">
+      <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+      <ul>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#programs" class="mobile-link">Our Work</a></li>
+        <li><a href="#involve" class="mobile-link">Get Involved</a></li>
+        <li><a href="#news" class="mobile-link">News</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#donate" class="mobile-link mobile-cta">Donate Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Hero section">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1600&q=80&auto=format&fit=crop" 
+         alt="Children smiling in a field" 
+         class="hero-img" 
+         loading="eager" />
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Registered NGO · Est. 2004</p>
+    <h1 class="hero-title">Every Seed<br/><em>Becomes</em> a Forest</h1>
+    <p class="hero-sub">We plant opportunity in communities overlooked by progress — through education, healthcare, and lasting human dignity.</p>
+    <div class="hero-actions">
+      <a href="#donate" class="btn-primary">Donate Now</a>
+      <a href="#programs" class="btn-ghost">See Our Work</a>
+    </div>
+  </div>
+  <div class="hero-stats" aria-label="Impact statistics">
+    <div class="stat-item">
+      <span class="stat-num" data-target="5842">0</span>
+      <span class="stat-label">Lives Impacted</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="12">0</span>
+      <span class="stat-label">Regions Covered</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="98">0</span>
+      <span class="stat-label">% Fund Utilisation</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="340">0</span>
+      <span class="stat-label">Active Volunteers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about section" id="about" aria-labelledby="about-heading">
+  <div class="container about-grid">
+    <div class="about-img-wrap">
+      <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80&auto=format&fit=crop" 
+           alt="Volunteers working with community members" 
+           loading="lazy" />
+      <div class="about-badge">
+        <span class="badge-num">20+</span>
+        <span class="badge-txt">Years of service</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-eyebrow" id="about-heading">Who We Are</p>
+      <h2 class="section-title">Rooted in communities,<br/>growing with purpose</h2>
+      <p>HopeRoot Trust was founded on the belief that every human being deserves access to health, knowledge, and a dignified life. Since 2004, we've worked hand-in-hand with underserved communities across 12 regions.</p>
+      <p>We are transparent, accountable, and community-led. Every rupee donated is tracked, reported, and published in our annual financial disclosures.</p>
+      <div class="values-list">
+        <div class="value-item"><span class="val-icon" aria-hidden="true">🤝</span> Integrity</div>
+        <div class="value-item"><span class="val-icon" aria-hidden="true">🔍</span> Transparency</div>
+        <div class="value-item"><span class="val-icon" aria-hidden="true">💛</span> Compassion</div>
+        <div class="value-item"><span class="val-icon" aria-hidden="true">🌿</span> Sustainability</div>
+      </div>
+      <a href="#" class="btn-outline" aria-label="Download Annual Report PDF">Download Annual Report</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="programs section" id="programs" aria-labelledby="programs-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow" id="programs-heading">Our Work</p>
+      <h2 class="section-title">Programs that move the needle</h2>
+    </div>
+    <div class="programs-grid">
+      <article class="program-card" aria-labelledby="prog-edu">
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80&auto=format&fit=crop" 
+               alt="Children studying in a bright classroom" loading="lazy" />
+        </div>
+        <div class="prog-body">
+          <span class="prog-tag">Education</span>
+          <h3 id="prog-edu">Bright Futures Program</h3>
+          <p>Providing scholarships, school supplies, and digital literacy to 1,200+ children annually.</p>
+          <div class="prog-progress" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Funding progress: 72%">
+            <div class="prog-bar" style="--pct: 72%"></div>
+            <span class="prog-pct">72% Funded</span>
+          </div>
+          <a href="#donate" class="btn-prog">Support This →</a>
+        </div>
+      </article>
+      <article class="program-card" aria-labelledby="prog-health">
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80&auto=format&fit=crop" 
+               alt="Medical volunteers providing healthcare" loading="lazy" />
+        </div>
+        <div class="prog-body">
+          <span class="prog-tag prog-tag--health">Healthcare</span>
+          <h3 id="prog-health">Rural Health Camps</h3>
+          <p>Monthly free medical camps delivering diagnostics, medicine, and maternal care to remote villages.</p>
+          <div class="prog-progress" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Funding progress: 55%">
+            <div class="prog-bar" style="--pct: 55%"></div>
+            <span class="prog-pct">55% Funded</span>
+          </div>
+          <a href="#donate" class="btn-prog">Support This →</a>
+        </div>
+      </article>
+      <article class="program-card" aria-labelledby="prog-env">
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80&auto=format&fit=crop" 
+               alt="Tree planting volunteers in a community" loading="lazy" />
+        </div>
+        <div class="prog-body">
+          <span class="prog-tag prog-tag--env">Environment</span>
+          <h3 id="prog-env">Green Village Initiative</h3>
+          <p>Reforestation, clean water access, and solar energy for 30 villages, reducing emissions by 40 tonnes/year.</p>
+          <div class="prog-progress" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" aria-label="Funding progress: 89%">
+            <div class="prog-bar" style="--pct: 89%"></div>
+            <span class="prog-pct">89% Funded</span>
+          </div>
+          <a href="#donate" class="btn-prog">Support This →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials section" aria-labelledby="testimonial-heading">
+  <div class="container">
+    <p class="section-eyebrow" id="testimonial-heading">Stories of Change</p>
+    <div class="testimonials-grid">
+      <blockquote class="testi-card">
+        <p>"Before HopeRoot, my daughter walked 6 km to reach school. Today she's the class topper, with books and a laptop provided by the trust."</p>
+        <footer><strong>Meena Sharma</strong> — Parent, Rajasthan</footer>
+      </blockquote>
+      <blockquote class="testi-card testi-card--featured">
+        <p>"The health camp diagnosed my husband's condition that we couldn't afford to test privately. Their intervention literally saved his life."</p>
+        <footer><strong>Priya Kumari</strong> — Beneficiary, Bihar</footer>
+      </blockquote>
+      <blockquote class="testi-card">
+        <p>"Volunteering with HopeRoot changed my perspective on impact. Every Saturday, I see tangible change with my own eyes."</p>
+        <footer><strong>Arjun Mehta</strong> — Volunteer, Mumbai</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DONATE ===== -->
+<section class="donate-section section" id="donate" aria-labelledby="donate-heading">
+  <div class="container donate-wrap">
+    <div class="donate-text">
+      <p class="section-eyebrow" id="donate-heading">Make a Difference</p>
+      <h2 class="section-title">Your generosity,<br/>their future</h2>
+      <ul class="donate-impact" aria-label="Impact of donations">
+        <li><strong>₹500</strong> — Feeds a child for a week</li>
+        <li><strong>₹1,500</strong> — Funds a medical check-up</li>
+        <li><strong>₹5,000</strong> — Sponsors a month of school</li>
+        <li><strong>₹10,000</strong> — Plants 200 trees in a village</li>
+      </ul>
+      <p class="donate-note">All donations are 80G tax-exempt. You will receive an automated receipt via email within minutes.</p>
+    </div>
+    <div class="donate-form-box" role="form" aria-label="Donation form">
+      <div class="form-tabs" role="tablist" aria-label="Donation frequency">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="onetime">One-Time</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="monthly">Monthly</button>
+      </div>
+      <div class="amount-grid" role="group" aria-label="Select donation amount">
+        <button class="amount-btn active" data-amount="500" aria-pressed="true">₹500</button>
+        <button class="amount-btn" data-amount="1500" aria-pressed="false">₹1,500</button>
+        <button class="amount-btn" data-amount="5000" aria-pressed="false">₹5,000</button>
+        <button class="amount-btn" data-amount="10000" aria-pressed="false">₹10,000</button>
+      </div>
+      <div class="custom-amount-wrap">
+        <label for="customAmount" class="sr-only">Enter custom amount in rupees</label>
+        <input type="number" id="customAmount" class="custom-amount" placeholder="Enter custom amount (₹)" min="100" aria-label="Custom donation amount" />
+      </div>
+      <div class="donor-fields">
+        <div class="field-group">
+          <label for="donorName">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="donorName" placeholder="Your name" required autocomplete="name" />
+          <span class="field-error" id="donorNameError" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="field-group">
+          <label for="donorEmail">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="donorEmail" placeholder="your@email.com" required autocomplete="email" />
+          <span class="field-error" id="donorEmailError" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="field-group">
+          <label for="donorPhone">Phone (optional)</label>
+          <input type="tel" id="donorPhone" placeholder="+91 98765 43210" autocomplete="tel" />
+        </div>
+      </div>
+      <!-- PAYMENT METHOD SELECTOR -->
+      <div class="payment-method-selector" role="group" aria-label="Choose payment method">
+        <p class="pay-label">Choose Payment Method:</p>
+        <div class="pay-method-grid">
+          <button class="pay-method-btn active" data-method="razorpay" type="button">
+            <span class="pmb-icon">💳</span>
+            <span class="pmb-name">Razorpay</span>
+            <span class="pmb-sub">Cards · UPI · Net Banking</span>
+          </button>
+          <button class="pay-method-btn" data-method="upi" type="button">
+            <span class="pmb-icon">📱</span>
+            <span class="pmb-name">UPI</span>
+            <span class="pmb-sub">GPay · PhonePe · Paytm</span>
+          </button>
+          <button class="pay-method-btn" data-method="card" type="button">
+            <span class="pmb-icon">🏦</span>
+            <span class="pmb-name">Cards</span>
+            <span class="pmb-sub">Visa · Mastercard · Rupay</span>
+          </button>
+          <button class="pay-method-btn" data-method="paypal" type="button">
+            <span class="pmb-icon">🌐</span>
+            <span class="pmb-name">PayPal</span>
+            <span class="pmb-sub">International payments</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- RAZORPAY PANEL (default) -->
+      <div class="pay-panel" id="panel-razorpay">
+        <button class="btn-donate-main" id="donateBtn" type="button">
+          <span id="donateBtnText">Donate ₹500 via Razorpay</span>
+        </button>
+      </div>
+
+      <!-- UPI PANEL -->
+      <div class="pay-panel" id="panel-upi" hidden>
+        <button class="btn-donate-main btn-upi" id="donateBtnUpi" type="button">
+          <span id="donateBtnUpiText">Donate ₹500 via UPI</span>
+        </button>
+        <p class="pay-info-note">Opens Razorpay with UPI pre-selected (GPay, PhonePe, Paytm)</p>
+      </div>
+
+      <!-- CARD PANEL -->
+      <div class="pay-panel" id="panel-card" hidden>
+        <button class="btn-donate-main btn-card" id="donateBtnCard" type="button">
+          <span id="donateBtnCardText">Donate ₹500 via Card</span>
+        </button>
+        <p class="pay-info-note">Opens Razorpay with Card payment pre-selected</p>
+      </div>
+
+      <!-- PAYPAL PANEL -->
+      <div class="pay-panel" id="panel-paypal" hidden>
+        <button class="btn-donate-main btn-paypal" id="donateBtnPaypal" type="button">
+          <span id="donateBtnPaypalText">Donate via PayPal 🌐</span>
+        </button>
+        <p class="pay-info-note">Opens PayPal secure checkout in new tab</p>
+      </div>
+
+      <p class="donate-security" id="donate-security-note">🔒 SSL encrypted · 80G receipt by email · GDPR compliant</p>
+      <div class="donate-success" id="donateSuccess" hidden aria-live="polite" aria-atomic="true">
+        <span class="success-icon" aria-hidden="true">✅</span>
+        <strong>Thank you for your donation!</strong>
+        <p>A receipt has been sent to your email. Transaction ID: <span id="txnId"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="involve section" id="involve" aria-labelledby="involve-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow" id="involve-heading">Get Involved</p>
+      <h2 class="section-title">There are many ways to help</h2>
+    </div>
+    <div class="involve-grid">
+      <div class="involve-card">
+        <span class="involve-icon" aria-hidden="true">🙋</span>
+        <h3>Volunteer</h3>
+        <p>Offer your skills, time, or expertise to one of our active programs. Weekend and remote options available.</p>
+        <form class="mini-form" id="volunteerForm" novalidate aria-label="Volunteer application form">
+          <div class="field-group">
+            <label for="volName">Your Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="volName" required placeholder="Full name" autocomplete="name"/>
+            <span class="field-error" id="volNameError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field-group">
+            <label for="volEmail">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="volEmail" required placeholder="you@email.com" autocomplete="email"/>
+            <span class="field-error" id="volEmailError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field-group">
+            <label for="volSkill">Skill / Area of Interest</label>
+            <select id="volSkill">
+              <option value="">Select an area</option>
+              <option>Teaching / Tutoring</option>
+              <option>Medical / Health</option>
+              <option>Technology</option>
+              <option>Fundraising</option>
+              <option>Field Operations</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="honeypot" aria-hidden="true"><label for="vol_hp">Leave this blank</label><input type="text" id="vol_hp" name="vol_hp" tabindex="-1" autocomplete="off" /></div>
+          <button type="submit" class="btn-primary btn-full">Apply to Volunteer</button>
+          <div class="form-success" id="volSuccess" hidden aria-live="polite">✅ Application received! We'll be in touch within 48 hours.</div>
+        </form>
+      </div>
+      <div class="involve-card">
+        <span class="involve-icon" aria-hidden="true">🏢</span>
+        <h3>Corporate CSR</h3>
+        <p>Partner with us to fulfil your CSR mandate meaningfully. We offer co-branded initiatives, employee engagement, and full impact reporting.</p>
+        <ul class="csr-list">
+          <li>Dedicated CSR coordinator</li>
+          <li>Quarterly impact reports</li>
+          <li>Branding on field projects</li>
+          <li>Employee volunteering programs</li>
+        </ul>
+        <a href="#contact" class="btn-outline">Partner With Us</a>
+      </div>
+      <div class="involve-card">
+        <span class="involve-icon" aria-hidden="true">💼</span>
+        <h3>Careers & Internships</h3>
+        <p>Join a team that believes work can be a force for good. We have openings for passionate individuals across functions.</p>
+        <ul class="jobs-list" aria-label="Current openings">
+          <li>Program Manager — Education</li>
+          <li>Field Coordinator — Healthcare</li>
+          <li>Digital Marketing Intern</li>
+          <li>Finance & Compliance Officer</li>
+        </ul>
+        <a href="#contact" class="btn-outline">View & Apply</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section class="news section" id="news" aria-labelledby="news-heading">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow" id="news-heading">News & Media</p>
+      <h2 class="section-title">From the field</h2>
+    </div>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80&auto=format&fit=crop" 
+             alt="Children receiving school supplies at a distribution event" loading="lazy" />
+        <div class="news-body">
+          <time class="news-date" datetime="2026-03-15">March 15, 2026</time>
+          <h3>2,000 Students Receive Digital Learning Kits</h3>
+          <p>Our largest education drive yet — distributing tablets and offline learning content to 2,000 students across 5 districts.</p>
+          <a href="#" class="news-read" aria-label="Read more about digital learning kits initiative">Read More →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80&auto=format&fit=crop" 
+             alt="Doctors at a free medical camp" loading="lazy" />
+        <div class="news-body">
+          <time class="news-date" datetime="2026-02-20">February 20, 2026</time>
+          <h3>Health Camp Reaches 800 Patients in 3 Days</h3>
+          <p>Our winter medical camp in Jharkhand delivered diagnostics, medicine, and specialist consultations free of charge.</p>
+          <a href="#" class="news-read" aria-label="Read more about winter health camp">Read More →</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=600&q=80&auto=format&fit=crop" 
+             alt="Community members planting trees" loading="lazy" />
+        <div class="news-body">
+          <time class="news-date" datetime="2026-01-10">January 10, 2026</time>
+          <h3>10,000 Trees Planted in Odisha's Drought Zone</h3>
+          <p>Community-led reforestation efforts supported by our Green Village team are showing early success in water retention.</p>
+          <a href="#" class="news-read" aria-label="Read more about Odisha tree planting">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section class="partners section" aria-label="Our partners and certifications">
+  <div class="container">
+    <p class="section-eyebrow">Trusted By</p>
+    <div class="partners-strip">
+      <div class="partner-logo" aria-label="UNICEF partner">UNICEF</div>
+      <div class="partner-logo" aria-label="WHO partner">WHO</div>
+      <div class="partner-logo" aria-label="GiveIndia partner">GiveIndia</div>
+      <div class="partner-logo" aria-label="Tata Trusts partner">Tata Trusts</div>
+      <div class="partner-logo" aria-label="Ministry of Social Justice">Min. Social Justice</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section section" id="contact" aria-labelledby="contact-heading">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="section-eyebrow" id="contact-heading">Get in Touch</p>
+      <h2 class="section-title">We'd love<br/>to hear from you</h2>
+      <address class="contact-details">
+        <p>📍 12, Seva Marg, Lodhi Road<br/>New Delhi — 110003</p>
+        <p>📞 <a href="tel:+911123456789">+91 11 2345 6789</a></p>
+        <p>📧 <a href="mailto:hello@hoperoot.org">hello@hoperoot.org</a></p>
+      </address>
+      <div class="social-links" aria-label="Social media links">
+        <a href="#" class="social-btn" aria-label="HopeRoot Trust on Instagram">Instagram</a>
+        <a href="#" class="social-btn" aria-label="HopeRoot Trust on LinkedIn">LinkedIn</a>
+        <a href="#" class="social-btn" aria-label="HopeRoot Trust on Facebook">Facebook</a>
+      </div>
+    </div>
+    <div class="contact-form-wrap">
+      <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+        <div class="field-row">
+          <div class="field-group">
+            <label for="cName">Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="cName" required placeholder="Your name" autocomplete="name" />
+            <span class="field-error" id="cNameError" role="alert" aria-live="polite"></span>
+          </div>
+          <div class="field-group">
+            <label for="cEmail">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="cEmail" required placeholder="you@email.com" autocomplete="email" />
+            <span class="field-error" id="cEmailError" role="alert" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="cSubject">Subject</label>
+          <input type="text" id="cSubject" placeholder="How can we help?" />
+        </div>
+        <div class="field-group">
+          <label for="cMessage">Message <span aria-hidden="true">*</span></label>
+          <textarea id="cMessage" rows="5" required placeholder="Your message..."></textarea>
+          <span class="field-error" id="cMessageError" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="honeypot" aria-hidden="true">
+          <label for="hp_field">Leave this blank</label>
+          <input type="text" id="hp_field" name="hp_field" tabindex="-1" autocomplete="off" />
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div class="form-success" id="contactSuccess" hidden aria-live="polite">✅ Message sent! We'll respond within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+  <!-- Map placeholder (replace with Google Maps embed) -->
+  <div class="map-placeholder" aria-label="Office location map placeholder">
+    <p>📍 Map integration placeholder — embed Google Maps iframe here</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text">🌱 HopeRoot <em>Trust</em></span>
+      <p>Registered under the Indian Trusts Act. 80G & 12A certified. FCRA approved.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Our Work</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#involve">Get Involved</a></li>
+        <li><a href="#">Annual Report</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="footer-legal">
+      <h4>Legal & Compliance</h4>
+      <p>80G Cert. No: DIT(E)/2024/001<br/>12A Cert. No: DIT(E)/2024/002<br/>PAN: AABTH1234C<br/>FCRA Reg. No: 231650001</p>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Stay Updated</h4>
+      <form class="newsletter-form" id="newsletterForm" novalidate aria-label="Newsletter signup">
+        <label for="nlEmail" class="sr-only">Email address for newsletter</label>
+        <input type="email" id="nlEmail" placeholder="your@email.com" required autocomplete="email" />
+        <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+      </form>
+      <div class="form-success" id="nlSuccess" hidden aria-live="polite">✅ Subscribed!</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 HopeRoot Trust. All rights reserved. Built with ❤️ for change.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
